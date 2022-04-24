@@ -10,7 +10,7 @@
     "48":"/images/icon48.png",
     "96":"/images/icon96.png"
   }, 
-  "action":{},
+
 
   "content_scripts":[{
     "matches": ["https://www.youtube.com/*"],
