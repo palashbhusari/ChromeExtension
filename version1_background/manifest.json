@@ -1,0 +1,23 @@
+{
+  "name": "Test extension",
+  "description": "Read Youtube URL",
+  "version": "2.0",
+  "manifest_version": 3, 
+
+  "permissions": ["storage","tabs"],
+
+  "icons": {
+    "48":"/images/icon48.png",
+    "96":"/images/icon96.png"
+  }, 
+  "action":{},
+
+  "content_scripts":[{
+    "matches": ["https://www.youtube.com/*"],
+    "js":["/js/content.js"]
+  }],
+
+  "background": {
+    "service_worker": "/js/background.js"
+  }
+}
